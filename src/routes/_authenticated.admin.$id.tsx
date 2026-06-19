@@ -83,7 +83,10 @@ function BriefingDetail() {
         ...STEPS.flatMap((s) => s.fields.map((f) => f.name as string)),
       ];
       for (const k of allKeys) payload[k] = values[k] ?? "";
-      const { error } = await supabase.from("briefings").update(payload).eq("id", id);
+      const { error } = await supabase
+        .from("briefings")
+        .update(payload as never)
+        .eq("id", id);
       if (error) throw error;
       toast.success("Respostas atualizadas.");
       qc.invalidateQueries({ queryKey: ["briefing", id] });
