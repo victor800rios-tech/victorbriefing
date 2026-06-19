@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Briefing" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "Briefing para Desenvolvimento de Site" },
+      { name: "twitter:title", content: "Briefing para Desenvolvimento de Site" },
+      { name: "description", content: "Client Briefing Hub is a web application for clients to submit detailed briefs for website development projects." },
+      { property: "og:description", content: "Client Briefing Hub is a web application for clients to submit detailed briefs for website development projects." },
+      { name: "twitter:description", content: "Client Briefing Hub is a web application for clients to submit detailed briefs for website development projects." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55338c8e-f657-440a-ae66-1e990286360f/id-preview-c3f23c53--e2c5a483-90d0-465f-8e79-9c9b6b7a8f02.lovable.app-1781900090992.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55338c8e-f657-440a-ae66-1e990286360f/id-preview-c3f23c53--e2c5a483-90d0-465f-8e79-9c9b6b7a8f02.lovable.app-1781900090992.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
